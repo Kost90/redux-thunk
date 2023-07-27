@@ -4,7 +4,7 @@
     align-items: center;
     width: 500px;
     padding: 50px;
-    background-color: indianred;
+    background-color: rgb(167, 230, 255);
     margin: 50px auto;
     gap:5px;
     border-radius: 10px;
@@ -18,9 +18,14 @@ input{
 }
 
 button{
-    padding: 5px;
+    padding: 8px;
     display: flex;
     justify-content: center;
     border-radius: 10px;
     cursor: pointer;
+}
+
+button:hover{
+    background-color: mediumaquamarine;
+    transition: 0.8s;
 }

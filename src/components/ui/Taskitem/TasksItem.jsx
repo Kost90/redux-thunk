@@ -1,4 +1,4 @@
-
+import styles from './Taskitem.module.css'
 import React, { useState} from "react";
 import TasksForm from "../Taskform/TasksForm";
 import { useDispatch } from "react-redux";
@@ -27,7 +27,7 @@ function TasksItem({ text, id, onDelete }) {
   };
 
   return (
-    <li>
+    <li className={styles.container}>
       {isEditing ? (
         <TasksForm
           onSubmit={handleEdit}
